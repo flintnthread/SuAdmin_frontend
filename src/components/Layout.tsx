@@ -1,4 +1,4 @@
-import { LayoutDashboard, LogOut, ShieldCheck, Store, Users } from "lucide-react";
+import { ClipboardList, LayoutDashboard, LogOut, ShieldCheck, Store, Users } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { useAuth } from "../auth/AuthContext";
 
@@ -6,6 +6,7 @@ const NAV_ITEMS = [
   { to: "/", label: "Dashboard", icon: LayoutDashboard, end: true },
   { to: "/admins", label: "Admins", icon: Users, end: false },
   { to: "/sellers", label: "Sellers", icon: Store, end: false },
+  { to: "/logs", label: "Logs", icon: ClipboardList, end: false },
 ];
 
 export function Layout() {

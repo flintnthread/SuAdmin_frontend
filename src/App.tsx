@@ -4,6 +4,7 @@ import { Layout } from "./components/Layout";
 import { AdminsPage } from "./pages/AdminsPage";
 import { DashboardPage } from "./pages/DashboardPage";
 import { LoginPage } from "./pages/LoginPage";
+import { LogsPage } from "./pages/LogsPage";
 import { SellerDetailPage } from "./pages/SellerDetailPage";
 import { SellersPage } from "./pages/SellersPage";
 
@@ -31,6 +32,7 @@ export function App() {
       >
         <Route index element={<DashboardPage />} />
         <Route path="admins" element={<AdminsPage />} />
+        <Route path="logs" element={<LogsPage />} />
         <Route path="sellers" element={<SellersPage />} />
         <Route path="sellers/:id" element={<SellerDetailPage />} />
         <Route path="*" element={<NotFound />} />
